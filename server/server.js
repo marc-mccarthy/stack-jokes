@@ -43,8 +43,11 @@ app.listen(PORT, () => {
 
 app.post('/addJoke', (req, res) => {
   console.log(`POST Received`, req.body)
+  jokes.push(req.body);
+  res.sendStatus(200);
 })
 
-app.post('/returnJokes', (req, res) => {
-  console.log(`GET Received`, req.body)
+app.get('/returnJokes', (req, res) => {
+  console.log(`GET Received`, req.body);
+  res.send(jokes);
 })
