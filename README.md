@@ -6,7 +6,7 @@ This here is a joke logger for storing simple jokes. THe jokes take three inputs
 
 ## Interface
 
-![screenshot](./server/public/images/screenshot.png)
+![wireframe](./server/public/images/wireframe.png)
 
 ## Languages
 
