@@ -1,11 +1,11 @@
 body {
     background-image: url('../images/minion.png');
     background-repeat: repeat;
+    text-align: center;
 }
 
 h1 {
     color: yellow;
-    text-align: center;
 }
 
 input {
@@ -17,16 +17,17 @@ input {
 }
 
 #questionIn {
-    width: 40%;
+    width: 35%;
 }
 
 #punchlineIn {
-    width: 40%;
+    width: 35%;
 }
 
 #addJokeButton {
     background-color: yellow;
-    height: 25px;
+    height: 33px;
+    width: 100px;
 }
 
 h2 {
