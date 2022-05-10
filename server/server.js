@@ -1,7 +1,7 @@
 const express = require( 'express' );
 const app = express();
 const bodyParser = require( 'body-parser' );
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // use bodyParser.urlencoded throughout the app with this:
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -42,7 +42,7 @@ app.listen(PORT, () => {
 }); // end spin up server
 
 app.post('/addJoke', (req, res) => {
-  console.log(`POST Received`, req.body)
+  console.log(`POST Received`, req.body);
   jokes.push(req.body);
   res.sendStatus(200);
 })
